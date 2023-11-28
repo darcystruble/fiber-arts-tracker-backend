@@ -1,6 +1,7 @@
 # Fiber Arts Tracker Backend
 
 ## ERD
+![ERD](/assets/Final-Project-Fiber-Tracker-Page-3.drawio.png)
 
 ## Resources
 
