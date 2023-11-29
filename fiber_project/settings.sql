@@ -1,0 +1,3 @@
+CREATE DATABASE fiberarts;
+CREATE USER fiberuser WITH PASSWORD 'fiber';
+GRANT ALL PRIVILEGES ON DATABASE fiberarts TO fiberuser;
