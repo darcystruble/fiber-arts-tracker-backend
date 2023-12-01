@@ -8,20 +8,20 @@ class KnittingSerializer(serializers.ModelSerializer):
 
 class CrochetSerializer(serializers.ModelSerializer):
     class Meta:
-        model: Crochet
-        feilds = ('id', 'user', 'name', 'brand', 'start_date', 'end_date', 'completion_status', 'log', 'pattern_name', 'pattern_designer', 'hook_size')
+        model = Crochet
+        fields = ('id', 'user', 'name', 'brand', 'start_date', 'end_date', 'completion_status', 'log', 'pattern_name', 'pattern_designer', 'hook_size')
 
 class SpinningSerializer(serializers.ModelSerializer):
     class Meta:
-        model: Spinning
-        feilds = ('id', 'user', 'name', 'brand', 'start_date', 'end_date', 'completion_status', 'log', 'singles_weight', 'finished_yarn_weight', 'ply')
+        model = Spinning
+        fields = ('id', 'user', 'name', 'brand', 'start_date', 'end_date', 'completion_status', 'log', 'singles_weight', 'finished_yarn_weight', 'ply')
 
 class YarnSerializer(serializers.ModelSerializer):
     class Meta:
-        model: Yarn
-        feilds = ('id', 'user', 'name', 'brand', 'amount', 'color', 'content', 'yarn-weight', 'yardage')
+        model = Yarn
+        fields = ('id', 'user', 'name', 'brand', 'amount', 'color', 'content', 'yarn_weight', 'yardage')
 
 class FiberSerializer(serializers.ModelSerializer):
     class Meta:
-        model: Fiber
-        feilds = ('id', 'user', 'name', 'brand', 'amount', 'color', 'content', 'fiber_weight_grams')
+        model = Fiber
+        fields = ('id', 'user', 'name', 'brand', 'amount', 'color', 'content', 'fiber_weight_grams')
