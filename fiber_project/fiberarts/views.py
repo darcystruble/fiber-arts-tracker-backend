@@ -1,9 +1,18 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .serializers import KnittingSerializer, CrochetSerializer, SpinningSerializer, YarnSerializer, FiberSerializer
+from .serializers import KnittingSerializer, CrochetSerializer, SpinningSerializer, YarnSerializer, FiberSerializer, UserSerializer
 from .models import Knitting, Crochet, Spinning, Yarn, Fiber
+from django.contrib.auth.models import User
 
 # Create your views here.
+
+class UserCreateView(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+class UserLoginView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 class KnittingView(generics.ListCreateAPIView):
     queryset = Knitting.objects.all()

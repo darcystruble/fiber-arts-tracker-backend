@@ -13,4 +13,6 @@ urlpatterns = [
     path('yarn/<int:pk>', views.YarnDetail.as_view(), name='yarn_detail'),
     path('fiber/', views.FiberView.as_view(), name='fiber_view'),
     path('fiber/<int:pk>', views.FiberDetail.as_view(), name='fiber_detail'),
+    path('user/', views.UserCreateView.as_view(), name='user_view'),
+    path('user/<int:pk>', views.UserLoginView.as_view(), name='user_detail'),
 ]
