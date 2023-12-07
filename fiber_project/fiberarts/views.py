@@ -52,4 +52,4 @@ class FiberView(generics.ListCreateAPIView):
 
 class FiberDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Fiber.objects.all()
-    serializer_class = FiberSerializer
+    serializer_class = FiberSerializers
